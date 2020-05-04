@@ -1,16 +1,16 @@
 import React from "react";
 
+import "../MenuItem";
+
 import "./Header.css";
+import MenuItem from "../MenuItem";
 
 const Header = () => {
   return (
     <div className="header">
-      <ul className="header-menu">
-        <li className="header-item">Главная</li>
-        <li className="header-item">Все события</li>
-        <li className="header-item">Свадьбы</li>
-      </ul>
-      <h1>Хедер</h1>
+      <MenuItem menuItemName="Главная" />
+      <MenuItem menuItemName="Все мероприятия" />
+      <MenuItem menuItemName="Свадьбы" />
     </div>
   );
 };
