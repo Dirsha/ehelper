@@ -9,7 +9,7 @@ import MainTemplate from "./templates/MainTemplate";
 import Calendar from "./pages/Calendar";
 import Clients from "./pages/Clients";
 import Partners from "./pages/ Partners";
-import Tasks from "./pages/ Tasks";
+import Tasks from "./pages/Tasks";
 
 function App() {
   return (
