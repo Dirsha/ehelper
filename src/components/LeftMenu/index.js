@@ -27,8 +27,6 @@ const LeftMenu = () => {
             Задачи
           </Link>
         </li>
-        <li className="leftmenu-link"></li>
-        <li className="leftmenu-link"></li>
       </ul>
     </div>
   );

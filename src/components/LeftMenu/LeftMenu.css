@@ -3,3 +3,18 @@
   width: 300px;
   background-color: gray;
 }
+
+.leftmenu-link-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+}
+.leftmenu-link {
+  list-style: none;
+  border: 3px solid black;
+}
+.leftmenu-link-item {
+  text-decoration: none;
+  color: black;
+}
