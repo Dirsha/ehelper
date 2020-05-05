@@ -1,0 +1,16 @@
+.maintemplate {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  height: 100vh;
+}
+.maintemplate-right {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid red;
+  padding: 0;
+  margin: 0;
+}
+.maintemplate-left {
+  padding: 0;
+  margin: 0;
+}

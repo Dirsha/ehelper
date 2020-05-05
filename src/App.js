@@ -1,11 +1,11 @@
 import React from "react";
-
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 import "./App.css";
-import Header from "./components/Header";
-
+import AllEvents from "./pages/AllEvents";
 import Main from "./pages/Main";
+import Weddings from "./pages/Weddings";
+import MainTemplate from "./templates/MainTemplate";
 
 function App() {
   return (
@@ -13,18 +13,22 @@ function App() {
       <Router>
         <Switch>
           <Route exact path="/">
-            <Main />
+            <MainTemplate>
+              <Main />
+            </MainTemplate>
           </Route>
           <Route path="/allevents">
-            <AllEvents />
+            <MainTemplate>
+              <AllEvents />
+            </MainTemplate>
           </Route>
           <Route path="/weddings">
-            <Weddings />
+            <MainTemplate>
+              <Weddings />
+            </MainTemplate>
           </Route>
         </Switch>
       </Router>
-
-      <Header />
     </div>
   );
 }

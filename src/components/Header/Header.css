@@ -1,3 +1,19 @@
 .header {
+}
+.header-menu {
   display: flex;
+
+  flex-direction: row;
+  justify-content: space-around;
+}
+.header-link {
+  display: block;
+  list-style: none;
+  padding: 5px;
+
+  border: solid 3px black;
+}
+.header-link-item {
+  text-decoration: none;
+  color: black;
 }
