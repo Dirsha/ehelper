@@ -1,8 +1,10 @@
 .header {
+  padding: 25px;
+  border: 3px solid red;
 }
 .header-menu {
   display: flex;
-
+  margin: 0;
   flex-direction: row;
   justify-content: space-around;
 }

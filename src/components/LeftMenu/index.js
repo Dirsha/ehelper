@@ -8,6 +8,11 @@ const LeftMenu = () => {
     <div className="leftmenu">
       <ul className="leftmenu-link-box">
         <li className="leftmenu-link">
+          <Link className="leftmenu-link-item" to="/">
+            Главная
+          </Link>
+        </li>
+        <li className="leftmenu-link">
           <Link className="leftmenu-link-item" to="/calendar">
             Календарь
           </Link>

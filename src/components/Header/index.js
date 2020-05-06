@@ -9,11 +9,6 @@ const Header = () => {
     <div className="header">
       <ul className="header-menu">
         <li className="header-link">
-          <Link className="header-link-item" to="/">
-            Главная
-          </Link>
-        </li>
-        <li className="header-link">
           <Link className="header-link-item" to="/allevents">
             Все мероприятия
           </Link>
