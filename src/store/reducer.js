@@ -7,6 +7,9 @@ const reducer = (state = {}, action) => {
       ...state,
       weddings: [action.payload],
     };
+  } else if (action.type === "ADD_PARTNER") {
+    state.partner = action.payload;
+    return state;
   } else {
     return state;
   }

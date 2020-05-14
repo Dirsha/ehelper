@@ -15,3 +15,10 @@ export const addWedding = {
     budget: "300$",
   },
 };
+export const addPartner = {
+  type: "ADD_PARTNER",
+  payload: {
+    profession: "Decor",
+    budgets: "300$ is little cash",
+  },
+};
