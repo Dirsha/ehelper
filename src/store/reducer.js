@@ -10,6 +10,9 @@ const reducer = (state = {}, action) => {
   } else if (action.type === "ADD_PARTNER") {
     state.partner = action.payload;
     return state;
+  } else if (action.type === "CLIENTS_FROM_SERVER") {
+    state.clients = action.payload;
+    return state;
   } else {
     return state;
   }

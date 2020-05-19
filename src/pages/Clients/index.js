@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 //import { useSelector } from "react-redux";
-
+import { clientsFromServer } from "../../store/actions";
 import "../../components/Client";
 import "./Clients.css";
 import Client from "../../components/Client";

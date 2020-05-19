@@ -22,3 +22,7 @@ export const addPartner = {
     budgets: "300$ is little cash",
   },
 };
+
+export const clientsFromServer = {
+  type: "CLIENTS_FROM_SERVER",
+};
