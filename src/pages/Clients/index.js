@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { addClientsFromServer } from "../../store/actions";
-import "../../components/Client";
+
+import Form from "../../components/Form";
+import { addClientsFromServer, addClient } from "../../store/actions";
 import "./Clients.css";
 import Client from "../../components/Client";
 
@@ -43,6 +44,7 @@ const Clients = () => {
         clients.map((item) => {
           return <Client key={item.id} name={item.name} email={item.email} />;
         })}
+      <Form buttonTitle={"Добавить клиента"} action={addClient} />
     </div>
   );
 };

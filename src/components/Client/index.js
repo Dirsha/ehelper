@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./Client.css";
+
 const Client = ({ name, email }) => {
   return (
     <div className="client">

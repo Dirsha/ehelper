@@ -26,3 +26,7 @@ export const addPartner = {
 export const addClientsFromServer = {
   type: "ADD_CLIENTS_FROM_SERVER",
 };
+
+export const addClient = {
+  type: "ADD_CLIENT",
+};
