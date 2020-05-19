@@ -8,11 +8,15 @@ const reducer = (state = {}, action) => {
       weddings: [action.payload],
     };
   } else if (action.type === "ADD_PARTNER") {
-    state.partner = action.payload;
-    return state;
-  } else if (action.type === "CLIENTS_FROM_SERVER") {
-    state.clients = action.payload;
-    return state;
+    return {
+      ...state,
+      partner: action.payload,
+    };
+  } else if (action.type === "ADD_CLIENTS_FROM_SERVER") {
+    return {
+      ...state,
+      clients: action.payload,
+    };
   } else {
     return state;
   }

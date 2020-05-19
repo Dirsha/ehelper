@@ -1,19 +1,23 @@
-import React, { useEffect, useState } from "react";
-//import { useSelector } from "react-redux";
-import { clientsFromServer } from "../../store/actions";
+import React, { useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
+import { addClientsFromServer } from "../../store/actions";
 import "../../components/Client";
 import "./Clients.css";
 import Client from "../../components/Client";
 
 const Clients = () => {
-  const [clients, setClients] = useState();
+  const dispatch = useDispatch();
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
       .then((result) => {
         return result.json();
       })
       .then((data) => {
-        setClients(data);
+        addClientsFromServer.payload = data;
+        return addClientsFromServer;
+      })
+      .then((action) => {
+        dispatch(action);
       })
       .catch((e) => {
         console.log(e);
@@ -30,6 +34,8 @@ const Clients = () => {
   //     alert("unmounting");
   //   };
   // }, []);
+
+  const clients = useSelector((state) => state.clients);
 
   return (
     <div className="clients">
