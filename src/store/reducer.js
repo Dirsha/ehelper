@@ -21,9 +21,13 @@ const reducer = (state = {}, action) => {
     return {
       ...state,
       clients: [...state.clients, action.payload],
-    }
-  }
-   else {
+    };
+  } else if (action.type === "ADD_EVENTS") {
+    return {
+      ...state,
+      clients: [...state.events, action.payload],
+    };
+  } else {
     return state;
   }
 };

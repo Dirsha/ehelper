@@ -30,3 +30,7 @@ export const addClientsFromServer = {
 export const addClient = {
   type: "ADD_CLIENT",
 };
+
+export const addEvents = {
+  type: "ADD_EVENTS",
+};
